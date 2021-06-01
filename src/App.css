@@ -1,4 +1,4 @@
-.text{
+/* .text{
   text-align: center;
 }
 
@@ -37,4 +37,13 @@ form input{
   margin: 7px;
   background-color: white;
 
+} */
+
+.box{
+  background-color: blueviolet;
+
+}
+
+.Daylight{
+  background-color: brown;
 }
