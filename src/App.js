@@ -1,20 +1,22 @@
-import  {useState} from "react";
-import './App.css';
-import Massage from "./Massage"
-//import Child from "./Child"
 
+
+
+import React,{useState} from 'react'
+import Parent from "./Parent"
+import Countercontext from "./Countercontext";
 
 function App() {
-  const [count, setcount] = useState(1)
-  
+  const count  = useState(25)
   return (
-    <>
-     <Massage counter={count} />
-     <button onClick={()=>{
-       setcount(count + 1)
-     }}>click no</button>
-    </>
-  );
+    <Countercontext.Provider value={count}>
+    
+    
+      <Parent  />
+   
+    </Countercontext.Provider>
+  )
 }
 
 export default App;
+
+ 
